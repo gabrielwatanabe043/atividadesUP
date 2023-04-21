@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Formulário</title>
 </head>
-<body>
+<body class="bg-primary text-white">
     <div class="container text-center">
-        <h1 class="primeiroTexto">Famintos lanches</h1>
+        <h1>Famintos lanches</h1>
         <img src="./img/hamburguer-removebg-preview.png" width="100px" alt="">
+        <h2>Faça seu pedido</h2>
     </div>
-    <h2>Faça seu pedido</h2>
-    <div>
+    
+    <div class="container text-center">
         <input type="text" name="input" id="nome" placeholder="Digite seu nome">
         <p>Selecione quantas Gramas será o hamburguer</p>
         <input type="radio" name="carne" value="120" id=""> 120G
@@ -24,10 +25,16 @@
         <input type="checkbox" name="Molho Barbucue" value="Molho Barbucue" id="MB"> Molho Barbucue
         <input type="checkbox" name="Molho Especial da Casa" value="Molho Especial da Casa" id="MEspecial">Molho Especial da Casa
         <input type="checkbox" name="Molho Supreme" value="Molho Supreme" id="MSupreme">Molho Supremes
-        
-    </div>  
-    <button onclick="fazerpedido()">Enviar</button>
-    <div>
+        <p></p>
+        <select name="" id="select1">
+         <option value="COM KETCHUP e MAIONESE">C/ KETCHUP e MAIONESE</option>
+         <option value="SEM KETCHUP e MAIONESE">S/ KETCHUP e MAIONESE</option>
+        </select> 
+        <p></p>
+        <button onclick="fazerpedido()">Enviar</button>
+    </div> 
+    
+    <div class="resultadoPedido">
         <p id="resultado"></p>
     </div>
     <script src="script.js"></script>
