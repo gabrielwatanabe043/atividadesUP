@@ -1,9 +1,9 @@
 function enviar(){
     let nomeAluno = document.getElementById('nome').value;
-    let primeiraNota = parseInt (document.getElementById('nota1').value)
-    let segundaNota = parseInt (document.getElementById('nota2').value)
-    let terceiraNota= parseInt (document.getElementById('nota3').value)
-    let quartaNota = parseInt (document.getElementById('nota4').value)
+    let primeiraNota = parseFloat(document.getElementById('nota1').value)
+    let segundaNota = parseFloat(document.getElementById('nota2').value)
+    let terceiraNota= parseFloat (document.getElementById('nota3').value)
+    let quartaNota = parseFloat (document.getElementById('nota4').value)
     let notaTotal = (primeiraNota + segundaNota + terceiraNota + quartaNota) /4
    
     if(notaTotal >= 6){
